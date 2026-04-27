@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ellen Vanjorek</title>
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 700px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        animation: fadeIn 1s ease;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: #6c5ce7;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: #e0e0e0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #00cec9;
+        color: black;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #00b5b1;
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="tag">Istraživačica</div>
+    <h1>Ellen Vanjorek</h1>
+
+    <p>
+        Ellen Vanjorek je mlada i ambiciozna istraživačica koja putuje svijetom u potrazi za skrivenim pričama i zaboravljenim mjestima.
+    </p>
+
+    <p>
+        Njezina znatiželja i hrabrost vode je kroz napuštene gradove, stare legende i misterije koje drugi izbjegavaju.
+    </p>
+
+    <p>
+        Iako djeluje smireno, iza njezinih putovanja krije se tajna koja ju je i dovela na ovaj put.
+    </p>
+
+    <a href="#" class="btn">Saznaj više</a>
+</div>
+
+</body>
+</html>
